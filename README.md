@@ -6,15 +6,32 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-brightgreen.svg" />
   <img alt="Dart" src="https://img.shields.io/badge/Dart-027DFD?logo=dart&logoColor=white" />
   <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=white" />
-  <img alt="Java" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
 </p>
 
 ## Description
-> Code used to solve puzzles in codingame.
+> <a href="https://www.codingame.com">CodinGame</a> is a challenge-based training platform for programmers where you can improve your coding skills with fun exercises. The code, used to solve puzzles, are added in this repository.
 
-## Prerequisite
+## Puzzles
 
-### 
+### Easy
+
+#### Onboarding
+>
+
+#### Mars Lander - Episode 1
+>
+
+#### Power of Thor - Episode 1
+>
+
+#### Temperatures
+>
+
+#### The Descent
+>
+
+### Medium
 >
 
 ## Author
