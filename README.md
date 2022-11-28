@@ -12,12 +12,36 @@
 ## Description
 > <a href="https://www.codingame.com">CodinGame</a> is a challenge-based training platform for programmers where you can improve your coding skills with fun exercises. The code, used to solve puzzles, are added in this repository.
 
+https://user-images.githubusercontent.com/47154593/204288881-865bba7c-17ba-4b73-93a1-be20ca783068.mp4
+
 ## Puzzles
 
 ### [Easy](https://github.com/rohan-bhautoo/Codingame/tree/main/Easy)
 
 #### Onboarding
->
+> Solving this puzzle helps you understand how the puzzles work on CodinGame.
+> 
+> Skill(s): Conditions
+
+```dart
+void main() {
+
+    // game loop
+    while (true) {
+        String enemy1 = readLineSync(); // name of enemy 1
+        int dist1 = int.parse(readLineSync()); // distance to enemy 1
+        String enemy2 = readLineSync(); // name of enemy 2
+        int dist2 = int.parse(readLineSync()); // distance to enemy 2
+
+        if (dist1 < dist2) {
+            print(enemy1);
+        } else {
+            print(enemy2);
+        }
+    }
+}
+```
+
 
 #### Mars Lander - Episode 1
 >
