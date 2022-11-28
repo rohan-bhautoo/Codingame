@@ -32,6 +32,14 @@
 >
 
 ### Medium
+
+#### Death First Search - Episode 1
+>
+
+#### Shadows of the Knight - Episode 1
+>
+
+#### There is no Spoon - Episode 1
 >
 
 ## Author
