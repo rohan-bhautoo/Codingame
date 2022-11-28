@@ -14,7 +14,7 @@
 
 ## Puzzles
 
-### Easy
+### [Easy](https://github.com/rohan-bhautoo/Codingame/tree/main/Easy)
 
 #### Onboarding
 >
@@ -31,7 +31,7 @@
 #### The Descent
 >
 
-### Medium
+### [Medium](https://github.com/rohan-bhautoo/Codingame/tree/main/Medium)
 
 #### Death First Search - Episode 1
 >
