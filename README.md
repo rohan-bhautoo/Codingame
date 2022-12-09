@@ -187,13 +187,111 @@ void main() {
 ### [Medium](https://github.com/rohan-bhautoo/Codingame/tree/main/Medium)
 
 #### Death First Search - Episode 1
->
+> This problem plays out on a graph where a “virus” moves from node to node, in search of an exit. There are several exits and you have to cut access to these exits by finding the best link to cut each turn.
+> 
+> Skill(s): Binary search, Intervals
+
+```dart
+WIP
+```
 
 #### Shadows of the Knight - Episode 1
->
+> The goal of this puzzle is to guess the coordinate of a bomb (line and column of a 2 dimensional array). You will have to make a guess at each step of the puzzle and adjust it from given feedbacks. Of course, you have a limited number of guess.
+> 
+> Skill(s): Binary search, Intervals
+
+```dart
+import 'dart:io';
+import 'dart:math';
+
+String readLineSync() {
+  String? s = stdin.readLineSync();
+  return s == null ? '' : s;
+}
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+void main() {
+    List inputs;
+    inputs = readLineSync().split(' ');
+    int W = int.parse(inputs[0]); // width of the building.
+    int H = int.parse(inputs[1]); // height of the building.
+    int N = int.parse(readLineSync()); // maximum number of turns before game over.
+    inputs = readLineSync().split(' ');
+    int X0 = int.parse(inputs[0]);
+    int Y0 = int.parse(inputs[1]);
+
+    int x1 = 0;
+    int y1 = 0;
+    int x2 = W - 1;
+    int y2 = H - 1;
+
+    // game loop
+    while (true) {
+        String bombDir = readLineSync(); // the direction of the bombs from batman's current location (U, UR, R, DR, D, DL, L or UL)
+
+        if(bombDir.contains('U')) {
+          y2 = Y0 - 1;
+        } else if(bombDir.contains('D')) {
+          y1 = Y0 + 1;
+        }
+
+        if(bombDir.contains('L')) {
+          x2 = X0 - 1;
+        } else if(bombDir.contains('R')) {
+          x1 = X0 + 1;
+        }
+
+        X0 = (x1 + (x2 - x1) / 2).floor();
+        Y0 = (y1 + (y2 - y1) / 2).floor();
+
+        print('${X0} ${Y0}');
+    }
+}
+```
 
 #### There is no Spoon - Episode 1
->
+> In this puzzle, you have to detect special characters from a string. You also have to store input values into a grid to explore it. You have to go through all elements from a grid (certainly using a double loop) and from those points, iterate again on some elements of the grid. Solving this puzzle make you learn the concept of nested loop.
+> 
+> Skill(s): Lists
+
+```python
+import sys
+import math
+
+# Don't let the machines win. You are humanity's last hope...
+
+width = int(input())  # the number of cells on the X axis
+height = int(input())  # the number of cells on the Y axis
+lines = []
+for i in range(height):
+    line = input()  # width characters, each either 0 or .
+    lines.append(list(line))
+for y in range(height):
+    for x in range(width):
+       if lines[y][x]==".":
+           continue
+       rx = ry = bx = by = -1
+       try:
+           for tx in range(x+1,width):
+               if(lines[y][tx]=='0'):
+                   rx = tx
+                   ry = y
+                   break
+       except Exception:
+           pass
+       try:
+           for ty in range(y+1, height):
+               if(lines[ty][x]=='0'):
+                   bx = x
+                   by =ty
+                   break
+       except Exception:
+           pass
+       print("{0} {1} {2} {3} {4} {5}".format(x, y, rx, ry, bx, by))
+```
 
 ## Author
 
