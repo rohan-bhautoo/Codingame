@@ -189,7 +189,7 @@ void main() {
 #### Death First Search - Episode 1
 > This problem plays out on a graph where a “virus” moves from node to node, in search of an exit. There are several exits and you have to cut access to these exits by finding the best link to cut each turn.
 > 
-> Skill(s): Binary search, Intervals
+> Skill(s): Breath First Search, Graphs
 
 ```dart
 WIP
